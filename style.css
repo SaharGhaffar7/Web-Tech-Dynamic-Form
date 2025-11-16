@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* FULL SCREEN PAGE STYLE */
+.screen {
+    width: 100vw;
+    height: 100vh;
+    background: #dae1e7; /* change color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Hide page 2 initially */
+.hidden {
+    display: none;
+}
+
+/* Center white box inside each page */
+.box {
+    background: #98b6c9; /* box color */
+    padding: 30px;
+    width: 400px;
+    border-radius: 10px;
+}
+
+h1 {
+    margin-top: 0;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input[type="number"],
+input[type="text"],
+select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+}
+
+button {
+    margin-top: 20px;
+    width: 100%;
+    padding: 12px;
+    background: #3e5f7a;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #324d62;
+}
+
+.upload-box {
+    margin: 5px 0;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- FULL SCREEN PAGE 1 -->
+    <section id="page1" class="screen">
+        <div class="box">
+            <h1>Enter Input Counts</h1>
+
+            <label>Text Boxes:</label>
+            <input type="number" id="txt" min="0" value="3">
+
+            <label>Check Boxes:</label>
+            <input type="number" id="chk" min="0" value="4">
+
+            <label>Radio Buttons:</label>
+            <input type="number" id="rdo" min="0" value="3">
+
+            <label>Combo Boxes:</label>
+            <input type="number" id="cmb" min="0" value="1">
+
+            <label>File Uploads:</label>
+            <input type="number" id="file" min="0" value="5">
+
+            <button onclick="generateForm()">Generate Form</button>
+        </div>
+    </section>
+
+    <!-- FULL SCREEN PAGE 2 -->
+    <section id="page2" class="screen hidden">
+        <div class="box">
+            <h1>Your Generated Form</h1>
+            <div id="formArea"></div>
+
+            <button onclick="goBack()">Back</button>
+        </div>
+    </section>
+
+<script src="script.js"></script>
+</body>
+</html>
